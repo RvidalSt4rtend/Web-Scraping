@@ -37,7 +37,7 @@ def search_currency(driver, currency_name):
         descripcion.send_keys(currency_name)
         submit.click()
 
-        # Esperar y obtener el valor de aduanas
+    
         valor_aduanas = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '/html/body/form/center[2]/table/tbody/tr[1]/td/table[3]/tbody/tr/td/table/tbody/tr[2]/td[4]'))
         ).text
@@ -50,7 +50,7 @@ def search_currency(driver, currency_name):
 
 def go_back(driver):
     try:
-        # Regresar a la página de búsqueda
+ 
         regresar = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, '/html/body/form/center[2]/table/tbody/tr[2]/td/table/tbody/tr/td/a'))
         )
@@ -61,7 +61,7 @@ def go_back(driver):
 def search_currency2(driver):
     currency_name = "DOLAR"
     try:
-        # Esperar a que el campo de descripción y el botón de envío estén disponibles
+     
         tipo_cambio_venta = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '/html/body/section[2]/div/div/div[2]/section/div[2]/div/div[1]/strong'))
         ).text
@@ -80,7 +80,6 @@ def main():
     driver = initialize_driver()
     driver.get(url)
 
-    # Lista de monedas a buscar
     currencies = ["SWISS FRANC", "EURO"]
 
     for currency in currencies:
