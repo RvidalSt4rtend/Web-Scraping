@@ -6,7 +6,7 @@ This project uses Selenium to automate the search for foreign currency exchange 
 
 - Python 3.0+
 - [Google Chrome](https://www.google.com/chrome/) installed
-- [Chromedriver](https://sites.google.com/chromium.org/driver/) (compatible with the installed version of Google Chrome and the operating system in use)
+- [Chromedriver](https://sites.google.com/chromium.org/driver/](https://googlechromelabs.github.io/chrome-for-testing/ ) (compatible with the installed version of Google Chrome and the operating system in use)
 - Selenium to interact with the browser
 
 ## Installation
@@ -30,7 +30,8 @@ This project uses Selenium to automate the search for foreign currency exchange 
     chmod +x chromedriver
 
 ## Optional
-![alt text](image-2.png)
+![image](https://github.com/user-attachments/assets/656a8806-aff0-4a28-8213-3c53c135784e)
 
 ## Results
-![alt text](image-4.png)
+![image](https://github.com/user-attachments/assets/86c3f1bd-e8af-4b33-b456-a16d1852ea61)
+
